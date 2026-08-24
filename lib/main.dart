@@ -41,7 +41,6 @@ class _TagGeneratorScreenState extends State<TagGeneratorScreen> {
   DateTime _prodDate = DateTime.now();
   DateTime _expDate = DateTime.now().add(const Duration(days: 30));
 
-  // Label Size: 55 mm Width x 40 mm Height
   static const double labelWidthMm = 55.0;
   static const double labelHeightMm = 40.0;
 
@@ -90,7 +89,7 @@ class _TagGeneratorScreenState extends State<TagGeneratorScreen> {
               border: pw.Border.all(color: PdfColors.black, width: 0.8),
             ),
             child: pw.Column(
-              cross: pw.CrossAxisAlignment.stretch,
+              crossAxisAlignment: pw.CrossAxisAlignment.stretch,
               mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
               children: [
                 // 1. Brand Name
@@ -128,7 +127,7 @@ class _TagGeneratorScreenState extends State<TagGeneratorScreen> {
                         flex: 6,
                         child: pw.Column(
                           mainAxisAlignment: pw.MainAxisAlignment.spaceEvenly,
-                          cross: pw.CrossAxisAlignment.start,
+                          crossAxisAlignment: pw.CrossAxisAlignment.start,
                           children: [
                             pw.Text('Date: ${_formatDate(_prodDate)}', style: const pw.TextStyle(fontSize: 6.5)),
                             pw.Text('EXP: ${_formatDate(_expDate)}', style: pw.TextStyle(fontSize: 6.5, fontWeight: pw.FontWeight.bold)),
@@ -145,7 +144,7 @@ class _TagGeneratorScreenState extends State<TagGeneratorScreen> {
                         flex: 5,
                         child: pw.Column(
                           mainAxisAlignment: pw.MainAxisAlignment.spaceEvenly,
-                          cross: pw.CrossAxisAlignment.end,
+                          crossAxisAlignment: pw.CrossAxisAlignment.end,
                           children: [
                             pw.Text('تاريخ الإنتاج', style: pw.TextStyle(font: font, fontSize: 6.5)),
                             pw.Text('الصلاحية', style: pw.TextStyle(font: font, fontSize: 6.5)),
