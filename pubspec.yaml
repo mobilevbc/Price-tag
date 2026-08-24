@@ -1,6 +1,15 @@
+name: price_tag_app
+description: Price tag generator app
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
 dependencies:
   flutter:
     sdk: flutter
-  intl: ^0.18.1  # തീയതി ഫോർമാറ്റ് ചെയ്യാൻ
-  pdf: ^3.10.3   # പി.ഡി.എഫ് ഉണ്ടാക്കാൻ
-  printing: ^5.11.0 # പി.ഡി.എഫ് പ്രിൻ്റ് ചെയ്യാൻ
+  intl: ^0.19.0
+  pdf: ^3.10.8
+  printing: ^5.13.0
+
+flutter:
+  uses-material-design: true
