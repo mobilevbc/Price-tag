@@ -23,9 +23,9 @@ jobs:
         flutter-version: '3.22.x'
         channel: 'stable'
 
-    # വിട്ടുപോയ Android / Gradle ഫയലുകൾ ഓട്ടോമാറ്റിക് ആയി ഉണ്ടാക്കാൻ ഈ കമാൻഡ് സഹായിക്കും
+    # Android ഫയലുകൾ കൃത്യമായ പ്രോജക്റ്റ് പേരോടെ (price_tag) ഉണ്ടാക്കുന്നു
     - name: Recreate Android Project Files
-      run: flutter create . --platforms=android
+      run: flutter create . --platforms=android --project-name=price_tag
 
     - name: Get dependencies
       run: flutter pub get
