@@ -1,4 +1,4 @@
-name: price_tag_app
+name: price_tag
 description: Price tag generator app
 
 environment:
@@ -13,4 +13,3 @@ dependencies:
 
 flutter:
   uses-material-design: true
-  
